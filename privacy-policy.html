@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – GeoMock Location Changer</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:   #1a73e8;
+      --primary-dark: #1557b0;
+      --surface:   #ffffff;
+      --bg:        #f8f9fa;
+      --border:    #e0e0e0;
+      --text:      #202124;
+      --muted:     #5f6368;
+      --accent:    #e8f0fe;
+      --radius:    8px;
+      --max-width: 860px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .app-icon {
+      font-size: 3rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p.subtitle {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    /* ── Layout wrapper ── */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── Meta bar ── */
+    .meta-bar {
+      background: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .meta-bar strong { color: var(--primary); }
+
+    /* ── Main card ── */
+    main {
+      padding: 40px 0 60px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 24px 20px; }
+    }
+
+    /* ── Table of contents ── */
+    .toc {
+      background: var(--accent);
+      border-left: 4px solid var(--primary);
+    }
+
+    .toc h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      padding-left: 22px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.925rem;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Section headings ── */
+    .section { scroll-margin-top: 20px; }
+
+    .section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .section p { margin-bottom: 12px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul, .section ol {
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+
+    .section li { margin-bottom: 6px; }
+
+    /* ── Third-party service cards ── */
+    .service-list { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
+
+    .service-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      background: var(--bg);
+    }
+
+    .service-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .service-item p { margin: 0; font-size: 0.925rem; color: var(--muted); }
+
+    /* ── Highlight box ── */
+    .highlight-box {
+      background: var(--accent);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 14px;
+      font-size: 0.925rem;
+    }
+
+    /* ── Links ── */
+    a { color: var(--primary); }
+    a:hover { color: var(--primary-dark); }
+
+    /* ── Footer ── */
+    footer {
+      background: #2d2d2d;
+      color: #aaa;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.875rem;
+    }
+
+    footer a { color: #90b4f5; }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header>
+    <span class="app-icon" aria-hidden="true">📍</span>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">GeoMock Location Changer</p>
+  </header>
+
+  <!-- ═══ META BAR ═══ -->
+  <div class="meta-bar">
+    <div class="container">
+      <strong>Last Updated:</strong> July 16, 2026
+    </div>
+  </div>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <main>
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="card">
+        <p>
+          Welcome to <strong>GeoMock Location Changer</strong> ("GeoMock", "the App", "we", "us", or "our").
+          This Privacy Policy explains how we handle information when you use our Android application.
+          By using GeoMock, you agree to the practices described in this policy.
+        </p>
+        <p>
+          GeoMock Location Changer is an Android application that allows users to simulate device GPS
+          locations for development, testing, and debugging purposes. We are committed to protecting your
+          privacy and being transparent about our data practices.
+        </p>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="card toc" aria-label="Table of Contents">
+        <h2>Table of Contents</h2>
+        <ol>
+          <li><a href="#information-we-collect">Information We Collect</a></li>
+          <li><a href="#how-information-is-used">How Information Is Used</a></li>
+          <li><a href="#third-party-services">Third-Party Services</a></li>
+          <li><a href="#data-security">Data Security</a></li>
+          <li><a href="#childrens-privacy">Children's Privacy</a></li>
+          <li><a href="#changes-to-this-policy">Changes to This Privacy Policy</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ol>
+      </div>
+
+      <!-- 1. Information We Collect -->
+      <div class="card section" id="information-we-collect">
+        <h2>1. Information We Collect</h2>
+        <div class="highlight-box">
+          <strong>Short answer:</strong> We do not collect, store, or transmit your personal information
+          or location data to our servers.
+        </div>
+        <p>
+          GeoMock Location Changer does <strong>not</strong> collect, store, or transmit any of the
+          following to our servers:
+        </p>
+        <ul>
+          <li>Real or simulated GPS location data</li>
+          <li>Personal identification information</li>
+          <li>Account credentials (the App does not require account creation or login)</li>
+          <li>Device identifiers beyond what is described under Third-Party Services below</li>
+        </ul>
+        <p>
+          The App may request the <strong>ACCESS_FINE_LOCATION</strong> and
+          <strong>ACCESS_COARSE_LOCATION</strong> permissions solely to enable its core
+          functionality of simulating GPS locations on your device. This data is processed
+          entirely on-device and is never transmitted to us.
+        </p>
+        <p>
+          Third-party services integrated into the App (described in Section&nbsp;3) may
+          independently collect certain technical information as governed by their own privacy
+          policies.
+        </p>
+      </div>
+
+      <!-- 2. How Information Is Used -->
+      <div class="card section" id="how-information-is-used">
+        <h2>2. How Information Is Used</h2>
+        <p>
+          Because we do not collect personal information, we do not use it in any way. Specifically:
+        </p>
+        <ul>
+          <li>We do <strong>not</strong> sell your personal information to third parties.</li>
+          <li>We do <strong>not</strong> use your data for profiling or targeted advertising on our end.</li>
+          <li>
+            We do <strong>not</strong> share personal information with third parties, except as
+            may be inherent to the operation of third-party SDKs described in Section&nbsp;3.
+          </li>
+        </ul>
+        <p>
+          Any data collected by third-party SDKs (e.g., Google AdMob) is used by those third
+          parties in accordance with their own privacy policies.
+        </p>
+      </div>
+
+      <!-- 3. Third-Party Services -->
+      <div class="card section" id="third-party-services">
+        <h2>3. Third-Party Services</h2>
+        <p>
+          GeoMock integrates the following third-party services. Each service operates under its
+          own privacy policy, which we encourage you to review.
+        </p>
+
+        <div class="service-list">
+
+          <div class="service-item">
+            <h3>Google AdMob</h3>
+            <p>
+              The App may display advertisements provided by Google AdMob. Google may collect
+              information such as your Advertising ID, device information, and usage data to
+              deliver and measure ads. We do not control the data Google collects through AdMob.
+              You can opt out of personalised advertising in your device's Google settings.
+              <br />
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                Google Privacy Policy ↗
+              </a>
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>Google Play Billing</h3>
+            <p>
+              The App offers an optional one-time in-app purchase ("Remove Ads") through
+              Google Play Billing. All payment processing is handled entirely by Google Play.
+              We do <strong>not</strong> receive, process, or store any payment information,
+              credit card details, or billing data.
+              <br />
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                Google Privacy Policy ↗
+              </a>
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>Google Play Services</h3>
+            <p>
+              The App uses Google Play Services to provide standard Android platform features.
+              Google Play Services may collect diagnostic and device information as described
+              in Google's Privacy Policy.
+              <br />
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                Google Privacy Policy ↗
+              </a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 4. Data Security -->
+      <div class="card section" id="data-security">
+        <h2>4. Data Security</h2>
+        <p>
+          We take the security of your information seriously. Because GeoMock does not collect
+          or transmit personal data to our servers, the risk of a data breach on our end is
+          minimised.
+        </p>
+        <p>
+          All on-device operations performed by the App remain on your device. We recommend
+          keeping your Android operating system and the App updated to benefit from the latest
+          security patches.
+        </p>
+        <p>
+          Please be aware that no method of electronic storage or transmission is 100% secure.
+          While we strive to protect your privacy, we cannot guarantee absolute security of
+          information handled by third-party services.
+        </p>
+      </div>
+
+      <!-- 5. Children's Privacy -->
+      <div class="card section" id="childrens-privacy">
+        <h2>5. Children's Privacy</h2>
+        <p>
+          GeoMock Location Changer is intended for users aged <strong>18 and older</strong>.
+          The App is designed for developers, testers, and technically proficient users who
+          need GPS simulation capabilities.
+        </p>
+        <p>
+          We do not knowingly collect personal information from children under the age of 13
+          (or the applicable age of digital consent in your jurisdiction). If you believe a
+          child has provided personal information through the App or its integrated third-party
+          services, please contact us at the email address listed in Section&nbsp;7 so we can
+          take appropriate action.
+        </p>
+      </div>
+
+      <!-- 6. Changes to This Privacy Policy -->
+      <div class="card section" id="changes-to-this-policy">
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in the App,
+          applicable law, or our practices. When we make changes, we will update the
+          <strong>Last Updated</strong> date at the top of this page.
+        </p>
+        <p>
+          We encourage you to review this Privacy Policy periodically. Continued use of the
+          App after any changes constitutes your acceptance of the updated policy.
+        </p>
+      </div>
+
+      <!-- 7. Contact Us -->
+      <div class="card section" id="contact-us">
+        <h2>7. Contact Us</h2>
+        <p>
+          If you have any questions, concerns, or requests regarding this Privacy Policy or
+          our data practices, please contact us at:
+        </p>
+        <p>
+          📧 <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+        </p>
+        <p>
+          We will do our best to respond to your inquiry within a reasonable timeframe.
+        </p>
+      </div>
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="container">
+      <p>© 2026 GeoMock Location Changer. All rights reserved.</p>
+      <p style="margin-top:6px;">
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+          Google Privacy Policy
+        </a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
